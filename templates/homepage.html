@@ -1,0 +1,25 @@
+{% load static %}
+<html>
+
+<head>
+    <link rel="icon" href={%static "unnamed.png" %} type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href={%static "styles.css" %}>
+    <title>Find Doppelganger</title>
+</head>
+
+<body>
+    <center>
+        <h1>Find your Doppelganger</h1>
+    </center>
+    <form action="upload" method="post" enctype="multipart/form-data" align="center">
+        {% csrf_token %}
+        <input type="file" name="file" color="white" class="btn-grad" value="Select File" required><br><br><br>
+        <label>Name:</label><input type="text" name="name" required><br><br><br>
+        <input type="checkbox" required>
+        <label>Agree to all Terms and Services</label><br><br><br>
+        <input type="submit" value="Find" class="btn-grad">
+    </form>
+
+</body>
+
+</html>

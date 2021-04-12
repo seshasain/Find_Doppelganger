@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400);
+body {
+    background: #222;
+}
+
+label {
+    color: white;
+}
+
+h1 {
+    display: table;
+    margin: 0 auto;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    font-size: 5em;
+    background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 200px;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%)
+}
+
+.btn-grad {
+    margin: auto;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 0x #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}

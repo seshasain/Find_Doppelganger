@@ -1,0 +1,23 @@
+{% load static %}
+<html>
+
+<head>
+    <link rel="icon" href={%static "unnamed.png" %} type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href={%static "styles.css" %}>
+    <title>Find Doppelganger</title>
+</head>
+
+<body>
+    <center>
+        <h1>Your Doppelganger Is:</h1>
+    </center>
+    <form action="homepage" align="center ">
+        <label>Matched with:</label><br><br><br>
+        <img src={%static "result.png" %} alt="not found" style="width: 500;height: 500;">
+        <br><br><br>
+        <input type="submit" value="back to homepage " class="btn-grad ">
+    </form>
+
+</body>
+
+</html>
